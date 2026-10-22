@@ -1,0 +1,46 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">LangChain calculator client terminal example</title>
+  <desc id="description">Illustrative client session showing a context statement, response, stored conversation messages, and provider-reported token usage placeholders.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <style>
+      .heading { font: 700 30px 'Segoe UI', sans-serif; fill: #f8fafc; }
+      .caption { font: 16px 'Segoe UI', sans-serif; fill: #94a3b8; }
+      .terminal { font: 17px 'Consolas', 'Courier New', monospace; fill: #e2e8f0; }
+      .user { font: 17px 'Consolas', 'Courier New', monospace; fill: #bfdbfe; }
+      .assistant { font: 17px 'Consolas', 'Courier New', monospace; fill: #bbf7d0; }
+      .section { font: 600 17px 'Consolas', 'Courier New', monospace; fill: #c4b5fd; }
+      .token { font: 17px 'Consolas', 'Courier New', monospace; fill: #fde68a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="url(#background)"/>
+  <text x="60" y="58" class="heading">LangChain + MCP Client</text>
+  <text x="60" y="88" class="caption">Illustrative sample session • model wording and token counts vary at runtime</text>
+
+  <rect x="60" y="115" width="1080" height="650" rx="14" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <circle cx="90" cy="145" r="7" fill="#f87171"/>
+  <circle cx="114" cy="145" r="7" fill="#fbbf24"/>
+  <circle cx="138" cy="145" r="7" fill="#4ade80"/>
+
+  <text x="86" y="194" class="section">You: My project uses Python and LangChain.</text>
+  <text x="86" y="232" class="terminal">[AGENT] Processing your question...</text>
+  <text x="86" y="280" class="assistant">Assistant: Got it - your project uses Python and LangChain.</text>
+
+  <text x="86" y="337" class="section">[TOKENS] Usage for this turn:</text>
+  <text x="112" y="373" class="token">Input: reported by the model provider</text>
+  <text x="112" y="409" class="token">Output: reported by the model provider</text>
+  <text x="112" y="445" class="token">Total: input + output</text>
+
+  <text x="86" y="505" class="section">[MEMORY] Stored conversation history:</text>
+  <text x="112" y="541" class="terminal">1. human: My project uses Python and LangChain.</text>
+  <text x="112" y="577" class="terminal">2. ai: Got it - your project uses Python and LangChain.</text>
+
+  <line x1="86" y1="615" x2="1110" y2="615" stroke="#334155" stroke-width="1"/>
+  <text x="86" y="653" class="caption">Older messages are summarized when history reaches 3 messages;</text>
+  <text x="86" y="681" class="caption">the middleware aims to retain the latest 2 messages.</text>
+  <text x="86" y="727" class="caption">Summary-call token usage is not included in the displayed counts.</text>
+</svg>

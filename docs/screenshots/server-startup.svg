@@ -1,0 +1,37 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Calculator MCP server terminal example</title>
+  <desc id="description">Illustrative terminal showing the server startup line and verified calculator tool output for 12 plus 18.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+    <style>
+      .heading { font: 700 30px 'Segoe UI', sans-serif; fill: #f8fafc; }
+      .caption { font: 16px 'Segoe UI', sans-serif; fill: #94a3b8; }
+      .terminal { font: 18px 'Consolas', 'Courier New', monospace; fill: #d1fae5; }
+      .muted { font: 18px 'Consolas', 'Courier New', monospace; fill: #93c5fd; }
+      .prompt { font: 18px 'Consolas', 'Courier New', monospace; fill: #c4b5fd; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#background)"/>
+  <text x="64" y="62" class="heading">Calculator MCP Server</text>
+  <text x="64" y="92" class="caption">Illustrative terminal output • arithmetic values verified against server.py</text>
+
+  <rect x="64" y="125" width="1072" height="490" rx="14" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <circle cx="94" cy="155" r="7" fill="#f87171"/>
+  <circle cx="118" cy="155" r="7" fill="#fbbf24"/>
+  <circle cx="142" cy="155" r="7" fill="#4ade80"/>
+  <text x="88" y="207" class="prompt">PS&gt; uv run python server.py</text>
+  <text x="88" y="253" class="terminal">[MCP SERVER] Starting on http://127.0.0.1:8001/mcp</text>
+  <text x="88" y="291" class="muted">Server stays running and waits for MCP requests.</text>
+
+  <text x="88" y="355" class="caption">When the client requests 12 + 18, server.py logs:</text>
+  <text x="88" y="399" class="terminal">[MCP TOOL CALLED] add(a=12, b=18)</text>
+  <text x="88" y="437" class="terminal">[MCP TOOL RESULT] add -&gt; 30</text>
+
+  <text x="88" y="505" class="caption">Other verified examples:</text>
+  <text x="88" y="545" class="terminal">multiply(7, 9) -&gt; 63</text>
+  <text x="88" y="581" class="terminal">divide(20, 4) -&gt; 5.0</text>
+</svg>
