@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.saurabhdrh/my-calculator-mcp-project",
+  "title": "Calculator MCP Server",
+  "description": "A simple calculator MCP server with arithmetic tools, built in Python.",
+  "repository": {
+    "url": "https://github.com/saurabhdrh/my-calculator-mcp-project",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://your-service.onrender.com/mcp"
+    }
+  ]
+}
